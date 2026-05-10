@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            text-align: center;
+            color: rgb(83, 39, 51);
+            background-color: #fabf7b;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h2>User Form</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="Age">Age:</label>
+    <input type="number" id="Age" name="Age"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    
+    <label for="tel">Telephone no:</label>
+    <input type="tel" id="tel" name="telephone"><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="time">Contact Time:</label>
+    <input type="time" id="time" name="time"><br><br>
+
+    <label for="dob">Additional Date Time:</label>
+    <input type="datetime-local" id="dob" name="dob"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+    
+    <label>Hobbies:</label><br>
+    <input type="checkbox" name="hobby" value="reading"> Reading<br>
+    <input type="checkbox" name="hobby" value="sports"> Sports<br>
+    <input type="checkbox" name="hobby" value="music"> Music<br><br>
+    
+    <h3> OTHER INFORMATION </h3>
+    <label> Fav Color</label>
+    <input type="color" name="Color"> <br><br>
+
+    <label>File: </label>
+    <input type="file"><br><br>
+
+    <label>Hidden</label>
+    <input type="hidden" name="user_id" value="101"><br><br>
+
+    <label>Month :</label>
+    <input type="month"><br><br>
+
+    <label>Week :</label>
+    <input type="week"><br><br>
+
+    <label>Range :</label>
+    <input type="range" min="1" max="10" name="rating"><br><br>
+
+    <label for="search">Search :</label>
+    <input type="search" id="search" name="query" placeholder="Search here">
+
+    <label>Url :</label>
+    <input type="url"><br><br>
+    
+    <label> Want to Reset :</label>
+    <input type="reset" > <br><br>
+    <input type="submit" id="Submit" name="Submit" style="color: rgb(188, 65, 65); background-color: hsl(200, 31%, 59%);"><br><br>
+
+    <button>
+        click me!
+    </button>
+</form>
+</body>
+</html>
