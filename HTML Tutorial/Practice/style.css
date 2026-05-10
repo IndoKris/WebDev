@@ -1,0 +1,11 @@
+div {
+    height: 100px;
+    width: 100px;
+    /* background-color: red; */
+    border-radius: 50%;
+    text-align: center;
+    margin-top:7px;
+    margin-right: 25px;
+    margin-left: 200px;
+}
+
