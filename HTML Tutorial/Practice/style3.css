@@ -1,0 +1,9 @@
+div{
+    height: 250px;
+    width:400px;
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    position:fixed;
+    right:10px;
+    bottom : 10px;
+}
