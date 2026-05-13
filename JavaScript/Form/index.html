@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+
+<body style="text-align: center;">
+        <h2>Registration Form</h2>
+
+        <form name="myForm" onsubmit="return validateForm();">
+            Full Name:<br>
+            <input type="text" name="fullname"><br><br>
+            Email:<br>
+            <input type="text" name="email"><br><br>
+            Contact Number:<br>
+            <input type="text" name="contact"><br><br>
+            Date of Birth:<br>
+            <input type="date" name="dob"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <script > 
+        function validateForm() {
+
+            // get values from form
+            var name = document.forms["myForm"]["fullname"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var contact = document.forms["myForm"]["contact"].value;
+            var dob = document.forms["myForm"]["dob"].value;
+
+            // check empty fields
+            if (name == "") {
+                alert("Name must not be empty!");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Email must not be empty!");
+                return false;
+            }
+
+            if (contact == "") {
+                alert("Contact number must not be empty!");
+                return false;
+            }
+
+            if (dob == "") {
+                alert("Please select your Date of Birth!");
+                return false;
+            }
+
+            // email validation
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(emailPattern)) {
+                alert("Enter a valid email!");
+                return false;
+            }
+
+            // contact validation (10 digits)
+            var contactPattern = /^[0-9]{10}$/;
+            if (!contact.match(contactPattern)) {
+                alert("Contact must be 10 digits!");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</body>
+</html>
